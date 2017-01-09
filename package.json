@@ -19,6 +19,10 @@
     "dev": "cross-env NODE_ENV=development nodemon -e ts --exec 'tsc --sourceMap && node dist/main.js'"
   },
   "dependencies": {
+    "@types/hapi": "^13.0.37",
+    "@types/wreck": "^7.0.28",
+    "hapi": "^16.1.0",
+    "wreck": "^10.0.0",
     "typescript": "^2.1.4"
   },
   "devDependencies": {
