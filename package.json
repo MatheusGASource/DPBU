@@ -2,6 +2,7 @@
   "name": "dpbu",
   "version": "0.0.1",
   "description": "Dados Públicos Brasileiros Unificados",
+  "main": "dist/main.js",
   "repository": "https://github.com/MatheusGASource/dpbu.git",
   "author": {
     "name": "MatheusGASource",
@@ -10,5 +11,21 @@
   "license": "BSD-3-Clause",
   "engines": {
     "node": "6.9.3"
+  },
+  "scripts": {
+    "postinstall": "tsc --removeComments",
+    "start": "node dist/main.js",
+    "build": "tsc",
+    "dev": "cross-env NODE_ENV=development nodemon -e ts --exec 'tsc --sourceMap && node dist/main.js'"
+  },
+  "dependencies": {
+    "typescript": "^2.1.4"
+  },
+  "devDependencies": {
+    "cross-env": "^3.1.4",
+    "nodemon": "^1.11.0",
+    "stylelint": "^7.7.1",
+    "stylelint-scss": "^1.4.1",
+    "tslint": "^4.3.1"
   }
 }
