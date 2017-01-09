@@ -1,0 +1,14 @@
+{
+  "name": "dpbu",
+  "version": "0.0.1",
+  "description": "Dados Públicos Brasileiros Unificados",
+  "repository": "https://github.com/MatheusGASource/dpbu.git",
+  "author": {
+    "name": "MatheusGASource",
+    "email": "matheusgasource@gmail.com"
+  },
+  "license": "BSD-3-Clause",
+  "engines": {
+    "node": "6.9.3"
+  }
+}
